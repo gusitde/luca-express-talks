@@ -1,29 +1,63 @@
+# ============================================
+# VoiceLuca - Luca Express Talk
+# ============================================
+
+# Python virtual environments
+.venv/
+personaplex-env/
+
+# Model weights & large binary files
+personaplex-7b-v1/model.safetensors
+personaplex-7b-v1/tokenizer-e351c8d8-checkpoint125.safetensors
+personaplex-7b-v1/tokenizer_spm_32k_3.model
+personaplex-7b-v1/dist.tgz
+personaplex-7b-v1/voices.tgz
+personaplex-7b-v1/.cache/
+
+# llama.cpp (submodule or external - too large)
+llama.cpp/
+
+# Node modules & build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+server_log.txt
+server_stdout.log
+server_stderr.log
+server_offload.log
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Environment files (keep .env.example)
+# Environment files
 .env
 .env.local
 .env.*.local
 
-# Editor directories and files
+# Editor dirs
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+*.so
+
+# OS
+desktop.ini
